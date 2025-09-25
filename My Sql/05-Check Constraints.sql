@@ -1,0 +1,12 @@
+# Check constraints 
+# its apply limit on particular values 
+
+CREATE DATABASE STATE;
+USE STATE;
+
+CREATE TABLE CITY(
+ID INT PRIMARY KEY,
+CITY VARCHAR(50),
+AGE INT,
+CONSTRAINT AGE_CHECK CHECK (AGE >=18 AND CITY = 'DELHI'));
+
